@@ -1,8 +1,17 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+
+# About
+
+This is a proof-of-concept (POC) program designed to process email leads. The program retrieves the latest email from the configured email account, identifies the sender's company, and searches the web for the company's revenue data for the year 2023. The content of relevant web pages is scraped and processed to extract revenue information, which is then displayed on a webpage along with email data.
+
+TODO: Implement a Retrieval-Augmented Generation (RAG) database with additional company details and generate a draft reply to incoming emails. Respond only to emails from high-value clients (i.e., those meeting the revenue threshold).
+
 ## Getting Started
 
 First, run the development server:
+
+Copy eval.example to .eval.local and set variables and keys
 
 ```bash
 npm run dev
